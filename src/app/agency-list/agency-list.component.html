@@ -1,0 +1,22 @@
+<section>
+    <nav>
+        <div class="nav-bar">
+            <p>Agencias</p>
+            <div>
+                <span class="icon icon-glass"></span>
+                <span class="icon icon-check"></span>
+            </div>
+        </div>
+    </nav>
+</section>
+<section class="content">
+    <div class="card" *ngFor="let agency of agencies" >
+        <img src="../../assets/user.svg" alt="user" width="50px">
+        <div class="address" (click)="navigateToDetail(agencies.indexOf(agency))">
+            <p>{{agency.agencia}}</p>
+            <p>{{agency.provincia}}</p>
+            <p>{{agency.direccion}}</p>
+        </div>
+        <span class="icon icon-star"></span>
+    </div>
+</section>
