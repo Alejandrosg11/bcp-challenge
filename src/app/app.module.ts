@@ -7,13 +7,15 @@ import { LandingComponent } from './landing/landing.component';
 import { AgencyListComponent } from './agency-list/agency-list.component';
 import { AgencyDetailComponent } from './agency-detail/agency-detail.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SafePipePipe } from './safe-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     AgencyListComponent,
-    AgencyDetailComponent
+    AgencyDetailComponent,
+    SafePipePipe
   ],
   imports: [
     BrowserModule,
